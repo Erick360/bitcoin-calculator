@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta chasrset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin calculator</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1>Bitcoin Calculator</h1>
+    <main id="main">
+        <p>
+            <span id="current-price">
+                Latest price:
+            </span>
+            <b>$<span id="bitcoin-price">    
+            </span> USD</b>
+        </p>
+        <label for="current-price">
+            How much bitcoin do you own?
+        </label>
+        <input type="number" step="any" placeholder="0.05"
+        id="bitcoin-amount">
+        <button id="calculate-bitcoin">
+            Calculate
+        </button>
+        <br />
+        <br />
+        <h3 id="usd-amount"></h3>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
